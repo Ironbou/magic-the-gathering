@@ -1,0 +1,10 @@
+<section fxLayout="row wrap">
+  <div *ngIf="card && card.imageUrl" 
+  fxFlex.xs="50" 
+  fxFlex.sm="33" 
+  fxFlex.md="25"
+  fxFlex.lg="10" 
+  fxFlex.xl="10">
+    <img [src]="[card.imageUrl]" >
+  </div>
+</section>

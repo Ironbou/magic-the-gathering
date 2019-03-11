@@ -1,0 +1,18 @@
+<div fxLayout="row" fxLayoutAlign="center center" *ngIf="!type">
+  <button mat-button *ngIf="1<page" (click)="lastPage()"><i class="material-icons">keyboard_arrow_left</i></button>
+
+  <p >Page {{page}}</p>
+
+  <button mat-button (click)="nextPage()"><i class="material-icons">keyboard_arrow_right</i></button>
+</div>
+
+<section fxLayout="row wrap">
+
+  <ng-container *ngFor="let value of cards">
+    <img [src]="[value.imageUrl]" *ngIf="value.imageUrl" fxFlex.xs="50" fxFlex.sm="33" fxFlex.md="25" fxFlex.lg="20"
+      fxFlex.xl="10" [routerLink]="['/cards', value.id]">
+  </ng-container>
+
+</section>
+
+<!-- service location back -->

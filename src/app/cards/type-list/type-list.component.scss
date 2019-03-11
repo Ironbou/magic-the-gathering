@@ -1,0 +1,13 @@
+@import "~@angular/material/theming";
+
+:host {
+    .my-class-active {
+        background: map-get($mat-grey, 500);
+    }
+    mat-nav-list {
+        overflow-x: hidden;
+        [mat-list-item] {
+            min-width: 10em;
+        }
+    }
+}

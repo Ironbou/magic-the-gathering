@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayout="row">
+    <button mat-raised-button color="primary" (click)='OnClickMenu()'><i class="material-icons">menu</i></button>
+    <mat-spinner color="accent" [diameter]="40" *ngIf="stateCardsList"></mat-spinner>
+    <mat-spinner color="accent" [diameter]="40" *ngIf="stateCard"></mat-spinner>
+    <h2 fxFlex="100" fxLayoutAlign="center center">{{title}}</h2>
+  </mat-toolbar-row>
+</mat-toolbar>
